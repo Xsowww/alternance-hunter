@@ -1,6 +1,5 @@
-import sqlite3 from "sqlite3";
-
-const db = new sqlite3.Database("./db.sqlite");
+import Database from 'better-sqlite3';
+const db = new Database('database.db');
 
 // 🧑 USERS
 db.run(`
